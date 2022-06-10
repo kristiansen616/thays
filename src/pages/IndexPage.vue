@@ -38,73 +38,39 @@
     </q-carousel>
   <div class="row justify-between">
 
-    <q-parallax :height="150">
-      <template v-slot:media>
-        <video width="720" height="440" poster="https://cdn.quasar.dev/img/polina.jpg" autoplay loop muted>
-          <source type="video/webm" src="https://files.fm/u/47tt243da.webm">
-          <source type="video/mp4" src="https://files.fm/u/fxh28eywt.mp4">
-        </video>
-      </template>
+    <q-card class="my-card">
+      <q-parallax
+        src="https://cdn.quasar.dev/img/parallax1.jpg"
+        :height="150"
+      />
 
-      <h3 class="text-white">Video</h3>
-    </q-parallax>
+      <q-card-section>
+        <div class="text-h6">Our Changing Planet</div>
+        <div class="text-subtitle2">by John Doe</div>
+      </q-card-section>
+    </q-card>
 
   </div>
-  <div class="q-pa-md">
-    <q-btn label="Reset" push color="white" text-color="primary" @click="reset" class="q-mb-md" />
-    <q-stepper
-      v-model="step"
-      header-nav
-      ref="stepper"
-      color="primary"
-      animated
-    >
-      <q-step
-        :name="1"
-        title="Select campaign settings"
-        icon="settings"
-        :done="done1"
-      >
-        For each ad campaign that you create, you can control how much you're willing to
-        spend on clicks and conversions, which networks and geographical locations you want
-        your ads to show on, and more.
+  <div class="q-pa-md" style="max-width: 100%">
+    <q-list bordered separator>
 
-        <q-stepper-navigation>
-          <q-btn @click="() => { done1 = true; step = 2 }" color="primary" label="Continue" />
-        </q-stepper-navigation>
-      </q-step>
+      <q-slide-item @top="onTop" @bottom="onBottom">
+        <template v-slot:top>
+          <q-icon name="link" />
+        </template>
+        <template v-slot:bottom>
+          <q-icon name="link_off" />
+        </template>
 
-      <q-step
-        :name="2"
-        title="Create an ad group"
-        caption="Optional"
-        icon="create_new_folder"
-        :done="done2"
-      >
-        An ad group contains one or more ads which target a shared set of keywords.
+        <q-item style="height: 150px">
+          <q-item-section avatar>
+            <q-avatar color="primary" text-color="white" icon="fingerprint" />
+          </q-item-section>
+          <q-item-section>Slide vertically</q-item-section>
+        </q-item>
+      </q-slide-item>
 
-        <q-stepper-navigation>
-          <q-btn @click="() => { done2 = true; step = 3 }" color="primary" label="Continue" />
-          <q-btn flat @click="step = 1" color="primary" label="Back" class="q-ml-sm" />
-        </q-stepper-navigation>
-      </q-step>
-
-      <q-step
-        :name="3"
-        title="Create an ad"
-        icon="add_comment"
-        :done="done3"
-      >
-        Try out different ad text to see what brings in the most customers, and learn how to
-        enhance your ads using features like ad extensions. If you run into any problems with
-        your ads, find out how to tell if they're running and how to resolve approval issues.
-
-        <q-stepper-navigation>
-          <q-btn color="primary" @click="done3 = true" label="Finish" />
-          <q-btn flat @click="step = 2" color="primary" label="Back" class="q-ml-sm" />
-        </q-stepper-navigation>
-      </q-step>
-    </q-stepper>
+    </q-list>
   </div>
   <div class="row text-center justify-center" style="padding-bottom: 99px">
     <div class="col-md-12 col-sm-10 col-xs-12 col-lg-12">
@@ -480,31 +446,41 @@
 </template>
 
 <script>
-import { defineComponent, ref, computed } from 'vue'
+import { defineComponent, ref, computed, onBeforeUnmount } from 'vue'
 import { useQuasar } from 'quasar'
 
 export default defineComponent({
   name: 'IndexPage',
   setup () {
+    const $q = useQuasar()
     const step = ref(1)
     const done1 = ref(false)
     const done2 = ref(false)
     const done3 = ref(false)
-    const $q = useQuasar()
+    let timer
 
-    function reset () {
-      done1.value = false
-      done2.value = false
-      done3.value = false
-      step.value = 1
+    function finalize (reset) {
+      timer = setTimeout(() => {
+        reset()
+      }, 1000)
     }
+
+    onBeforeUnmount(() => {
+      clearTimeout(timer)
+    })
     return {
+      onTop ({ reset }) {
+        finalize(reset)
+      },
+
+      onBottom ({ reset }) {
+        finalize(reset)
+      },
       autoplay: ref(true),
       layout: computed(() => {
         return $q.screen.lt.sm ? 'dense' : ($q.screen.lt.md ? 'comfortable' : 'loose')
       }),
       step,
-      reset,
       done1,
       done2,
       done3,
@@ -542,7 +518,9 @@ export default defineComponent({
   width: 120px !important
   min-height: auto !important
   color: #000000
-
+.my-card
+  width: 100%
+  max-width: 500px
 .logo-marca
   border-right: 3px solid red
 
