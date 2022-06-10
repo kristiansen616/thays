@@ -17,37 +17,21 @@
       height="55em"
       class="bg-purple text-white shadow-1 rounded-borders"
     >
-      <q-carousel-slide name="style" img-src="~assets/r16_9StoneOceanWallpaper_Lagger01onPatreon.png" class="column no-wrap flex-center">
-        <q-icon name="style" size="56px" />
-        <div class="q-mt-md text-center">
-          {{ lorem }}
-        </div>
+      <q-carousel-slide name="style" img-src="~assets/wp3956246.jpg" class="column no-wrap flex-center">
       </q-carousel-slide>
-      <q-carousel-slide name="tv" img-src="~assets/DracoMalfoyWallpaper.png" class="column no-wrap flex-center">
-        <q-icon name="live_tv" size="56px" />
-        <div class="q-mt-md text-center">
-          {{ lorem }}
-        </div>
+      <q-carousel-slide name="tv" img-src="~assets/giyu-tomioka-shinobu-kocho-demon-slayer-kimetsu-no-yaiba-hashira-0-hd-wallpaper-1920x1080-uhdpaper.com-600.1_c.jpg" class="column no-wrap flex-center">
       </q-carousel-slide>
-      <q-carousel-slide name="layers" img-src="~assets/article_full@1x.jpg" class="column no-wrap flex-center">
-        <q-icon name="layers" size="56px" />
-        <div class="q-mt-md text-center">
-          {{ lorem }}
-        </div>
+      <q-carousel-slide name="layers" img-src="~assets/gwen-and-miles-4k-u2-1366x768.jpg" class="column no-wrap flex-center">
       </q-carousel-slide>
     </q-carousel>
   <div class="row justify-between">
 
-    <q-card class="my-card">
+    <q-card class="my-card" style="max-width: 100%">
       <q-parallax
-        src="https://cdn.quasar.dev/img/parallax1.jpg"
-        :height="150"
-      />
-
-      <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
-        <div class="text-subtitle2">by John Doe</div>
-      </q-card-section>
+        src="~assets/photo_2022-06-01_17-54-489.jpg"
+        :height="300">
+      <h1 class="text-white">Feliz dia dos Namorados!!</h1>
+      </q-parallax>
     </q-card>
 
   </div>
@@ -56,17 +40,16 @@
 
       <q-slide-item @top="onTop" @bottom="onBottom">
         <template v-slot:top>
-          <q-icon name="link" />
         </template>
         <template v-slot:bottom>
-          <q-icon name="link_off" />
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/287gGlV3G58XK8qiG2IyLK?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </template>
 
         <q-item style="height: 150px">
-          <q-item-section avatar>
+          <q-item-section class="items-center" avatar>
             <q-avatar color="primary" text-color="white" icon="fingerprint" />
           </q-item-section>
-          <q-item-section>Slide vertically</q-item-section>
+          <q-item-section class="items-center">Arraste para cima ou para baixo.</q-item-section>
         </q-item>
       </q-slide-item>
 
@@ -462,7 +445,7 @@ export default defineComponent({
     function finalize (reset) {
       timer = setTimeout(() => {
         reset()
-      }, 1000)
+      }, 3000)
     }
 
     onBeforeUnmount(() => {
