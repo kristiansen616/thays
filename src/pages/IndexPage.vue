@@ -29,8 +29,13 @@
     <q-card class="my-card" style="max-width: 100%">
       <q-parallax
         src="~assets/photo_2022-06-01_17-54-489.jpg"
-        :height="300">
-      <h1 class="text-white">Feliz dia dos Namorados!!</h1>
+        :height="350">
+        <div>
+          <h1 class="text-center text-white">Feliz dia dos namorados!!</h1>
+          <h5 class="text-white text-center">
+            Nosso primeiro Dia dos Namorados e eu queria que fosse especial e único e fiz algo para você em que eu realmente soubesse e entregar com todo o meu amor. Fazer um site só para você e mostrar meu amor, carinho e o quanto me importo contigo. Eu te amo e para sempre vou te amar, vamos esperar os próximos dias dos Namorados juntos...
+          </h5>
+        </div>
       </q-parallax>
     </q-card>
 
@@ -40,12 +45,13 @@
 
       <q-slide-item @top="onTop" @bottom="onBottom">
         <template v-slot:top>
+          <iframe width="560" height="200" src="https://www.youtube.com/embed/d14uKw2yLtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </template>
         <template v-slot:bottom>
           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/287gGlV3G58XK8qiG2IyLK?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </template>
 
-        <q-item style="height: 150px">
+        <q-item style="height: 220px">
           <q-item-section class="items-center" avatar>
             <q-avatar color="primary" text-color="white" icon="fingerprint" />
           </q-item-section>
@@ -200,8 +206,7 @@
         <br/>
         <div>
           <p>
-            Um mês de namoro, Nosso primeiro mês foi muito bom e que jamais vai ser esquecido, ali começamos coisas e que vimos que gostavomos(amamos muitoooo) e que só deixou mais próximos e se amamando muito. Primeira vez que veio em casa e confesso que estava nervoso e ansioso, trocamos nossos presentes, ficamos avontade e depois ainda comemos batata frita perto da praia (Ameii os presentes amor :) )
-          </p>
+            Um mês de namoro. Nosso primeiro mês foi muito bom e que jamais vai ser esquecido, ali começamos coisas e que vimos que gostamos(amamos muitoooo) e que só deixou mais próximos e se amando muito. Primeira vez que veio em casa e confesso que estava nervoso e ansioso, trocamos nossos presentes, ficamos a vontade e depois ainda comemos batata frita perto da praia (Ameii o presente amor :) )          </p>
         </div>
       </q-timeline-entry>
 
@@ -212,8 +217,7 @@
       >
         <div>
           <p>
-            Dia muito especial, começou indo ver a apresentação da Thays dancando fancy e pude conhecer a mãe dela, Fui para Campo Grande esse dia para ficar o máximo de tempo com ela.(Quase tinha esquecido conheci os amigos dela também kkkkk)
-          </p>
+            Dia muito especial, começou indo ver a apresentação da Thays dançando fancy e pude conhecer a mãe dela, Fui para Campo Grande esse dia para ficar o máximo de tempo com ela.(Quase tinha esquecido conheci os amigos dela também kkkkk)          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -242,8 +246,7 @@
         </div>
         <div>
           <p>
-            Tive a oportunidade de passar esse aniversario contigo e dormir ai na sua casa a primeira vez, esse seu aniversario acredito eu que tenha sido bem incomum e inesperado, estarei em muitos e muitos aniversarios seus, obrigado pela por me deixar fazer parte disso.
-          </p>
+            Tive a oportunidade de passar esse aniversario contigo e dormir aí na sua casa a primeira vez, esse seu aniversário acredito eu que tenha sido bem incomum e inesperado, estarei em muitos e muitos aniversários seus, obrigado pela por me deixar fazer parte disso.          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry heading>2022</q-timeline-entry>
@@ -257,7 +260,8 @@
         </div>
         <br/>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Ano novo foi a primeira vez que você dormiu la em casa e ficou uns dias, já começamos um novo ano juntos e da melhor forma possível, não tinha jeito melhor para começar o ano vendo fogos contigo.          </p>
         </div>
       </q-timeline-entry>
 
@@ -270,7 +274,8 @@
           <q-img width="300px" height="350px" src="~assets/IMG-20220116-WA0004.jpg" no-native-menu />
         </div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Primeira vez no outback e comemos e bebemos muito kkkkk, foi um fim de semana divertido, pois fomos ficar em um lugar muito especial pela primeira vez(ramada)          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -283,7 +288,9 @@
         </div>
 
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Esse dia estávamos muito animados e bem lindos, fomos la starbucks e passeamos bastante no barra shopping.
+          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -295,7 +302,9 @@
           <q-img width="300px" height="350px" src="~assets/IMG-20220226-WA0010.jpg" no-native-menu />
         </div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Dia muito nervoso meu deusss, tinhamos brigado um dia antes e estamos em um clima muito estranho, a minha família foi apresentada para sua e minha mãe amou todos da sua família, conseguimos nos resolver e ficar de boas e o dia foi maravilhoso.
+          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -309,7 +318,9 @@
         </div>
 
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Dia em que começamos a usar a aliança e fomos a pria juntinhos e tava um frio danado.
+          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -321,7 +332,7 @@
           <q-img width="300px" height="350px" src="~assets/IMG_20220326_181320.jpg" no-native-menu />
         </div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Esse dia só o final dele foi meio M kkk, mas que dia perfeito, eu tava tão feliz esse dia que você via na minha cara, obrigado por proporcionar isso amor.
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -333,7 +344,8 @@
         <q-img width="300px" height="350px" src="~assets/IMG-20220412-WA0001.jpg" no-native-menu />
       </div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Esse dia a gente tava longe, mas mesmo assim não deixamos de fazer nossa comemoração e dar nossos presentes, teve até montagem e vídeos.          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -345,7 +357,8 @@
           <q-img width="300px" height="350px" src="~assets/photo_2022-06-08_20-02-38.jpg" no-native-menu />
         </div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Fiquei tão bêbado que misericórdia, e fomos até em uma baladinha de kpop kkkkkk, nunca achei que iria ir em uma vida. Eu mostrei o lado muito bêbado e nosso esse dia foi louco.          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -357,7 +370,8 @@
           <q-img width="300px" height="350px" src="~assets/IMG_20220430_130633.jpg" no-native-menu />
         </div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Minha primeira vez no zoológico, eu ameii nunca vi tanto animal diferente e foi um dia inteiro em que ficamos de amorzinho, só tava meio deserto e deu um medinho kkkkkkkk.          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -369,7 +383,8 @@
           <q-img width="300px" height="350px" src="~assets/IMG-20220519-WA0044.jpg" no-native-menu />
         </div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Filmão que a gente viu e lembro que no começo do relacionamento a gente já tinha visto ir lançar e agora foi no filme, e nossa até passei gel e meu deus esse dia a gente tava de roupa combinandoooo.          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -381,7 +396,6 @@
         <q-img width="300px" height="350px" src="~assets/IMG_20220514_175740.jpg" no-native-menu />
       </div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -390,7 +404,8 @@
         side="left"
       >
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Oitavo mês de namoro, caiu junto com o Dia dos Namorados e não tem coisa melhor, e ainda fim de semana, esse dia vai ser muito especial amor, oitavo mês e nossa como passou rápido em, Parabéns para nós meu amor.          </p>
         </div>
       </q-timeline-entry>
       <q-timeline-entry
@@ -410,15 +425,11 @@
        style="background-color: #295ec7;">
     <q-card class="card-footer" flat style="background-color: #295ec7; padding-top: 100px">
       <q-card-section class="row justify-center">
-        <div class="col-12 col-md-12 col-lg-6 col-sx-12 col-sm-12">
           <q-card-section>
-            <p class="text-h5">Contato</p>
-            <p>labmetro.uerj@gmail.com</p>
-
-            <p>Telefone:0 xx 21 2334-0725 / 0726 / 0727</p>
+            <p>
+              Com todo amor Lucas Felipe Da Silva Kristiansen, Obrigado por fazer parte da minha vida.
+            </p>
           </q-card-section>
-
-        </div>
       </q-card-section>
       <hr>
       <div class="q-pa-lg">
